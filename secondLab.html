@@ -1,0 +1,84 @@
+html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration Form</title>
+<style>
+    body {
+        font-family: Arial;
+        background-color: #050607;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .box {
+        background: #ffffff;
+        width: 320px;
+        padding: 25px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    }
+
+    .box::after {
+  content: "";
+  position: absolute;
+  top: 210px;
+  right: 510px;
+  width: 40px;
+  height: 35px;
+  background: rgba(152, 209, 233, 0.3); 
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 4px;
+}
+
+
+    h2 {
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        border: 1px solid gray;
+        font-size: 15px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        background-color: #0b1353;
+        color: rgb(255, 255, 255);
+        border: none;
+        font-size: 17px;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #157429;
+    }
+</style>
+
+</head>
+<body>
+
+<div class="box">
+    <h2>Register</h2>
+
+    <input type="text" placeholder="Full Name">
+    <input type="email" placeholder="Email">
+    <input type="password" placeholder="Password">
+
+    <button>Create Account</button>
+</div>
+
+</body>
+</html>
